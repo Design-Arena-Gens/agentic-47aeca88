@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 min-h-screen;
+  background-image: radial-gradient(circle at top left, rgba(0, 132, 255, 0.25), transparent 45%),
+    radial-gradient(circle at top right, rgba(37, 211, 102, 0.25), transparent 45%);
+}
+
+a {
+  @apply text-messenger font-semibold;
+}
+
+button {
+  @apply outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-messenger focus-visible:ring-offset-slate-950;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(148, 163, 184, 0.6);
+  border-radius: 9999px;
+}
